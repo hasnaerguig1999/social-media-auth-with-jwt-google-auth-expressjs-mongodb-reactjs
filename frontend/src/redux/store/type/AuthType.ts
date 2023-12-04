@@ -13,10 +13,7 @@ export type RegisterT={
   name :string ,
   password :string ,
 }
-export type LoginT={
-  email:string,
-  password:string,
-}
+
 
 interface LoginSuccessAction {
   type: typeof LOGIN_SUCCESS;

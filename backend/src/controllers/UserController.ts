@@ -41,9 +41,8 @@ export const login = asyncHandler (async (req: Request, res: Response) => {
 export const register = asyncHandler(async (req: Request, res: Response) => {
     console.log('Request Body:', req.body);
     
-    //  const { email, firstName, lastName, password } = req.body;
-    //  const name = `${firstName} ${lastName}`;
-    const { email, name, password } = req.body;
+     const { email, firstName, lastName, password } = req.body;
+     const name = `${firstName} ${lastName}`;
     const data : UserT = {
         name: name,
         email: email,
@@ -51,6 +50,7 @@ export const register = asyncHandler(async (req: Request, res: Response) => {
       }
       const user = new User({
         email, name, password
+        
       });
     
       await user.save();

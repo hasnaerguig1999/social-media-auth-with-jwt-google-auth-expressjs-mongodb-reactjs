@@ -23,12 +23,13 @@ const authReducer = (state = initialState, action: AuthActionTypes): AuthState =
         loading: false,
         error: null,
       };
-    case FAIL_REQUEST:
-      return {
-        ...state,
-        loading: false,
-        error: (action.payload as { error: string }).error,
-      };
+   case FAIL_REQUEST:
+  return {
+    ...state,
+    loading: false,
+    error: action.payload.error,
+  };
+
     default:
       return state;
   }

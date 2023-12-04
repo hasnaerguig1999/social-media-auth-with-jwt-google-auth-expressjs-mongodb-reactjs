@@ -13,7 +13,14 @@ export const loginAsync = (email: string, password: string) => {
   return async (dispatch: Dispatch<AuthActionTypes>) => {
     try {
       const response = await login(email, password);
-      dispatch(loginSuccess(response.data.token));
+      console.log(response);
+
+      if (response) {
+        dispatch(loginSuccess(response.data.token));
+        
+      } else {
+        dispatch(failRequest("Token not found in the response"));
+      }
     } catch (error) {
       if (error instanceof Error) {
         dispatch(failRequest(error.message));
@@ -21,6 +28,7 @@ export const loginAsync = (email: string, password: string) => {
     }
   };
 };
+
 
 export const registerSuccess = (token: string): AuthActionTypes => ({
   type: REGISTER_SUCCESS,
