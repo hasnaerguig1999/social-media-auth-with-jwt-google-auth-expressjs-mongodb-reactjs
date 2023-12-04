@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#btn{
+  margin-left: 854px;
+  margin-top: -62px;
+  position: absolute;
+  width: 7%;
+}
+#btn-style{
+  border-radius: 12px;
+  padding: 5px;
+}
+#icon-style{
+  color: white;
+  margin-top: -1px;
+}
+#btn-style-google{
+  border-radius: 2px;
+  color: black;
+  border: 1px solid #ccc;
+  padding-bottom: 3px;
+  width: 192px;
+  white-space: nowrap;
+  font-size: small;
+  margin-left: 12px;
+  margin-top: 29px;
+}
+
+#icone-style-google{
+ margin-left: 4px;
+    
+}
+#btn-signuup{
+  white-space: nowrap;
+  font-size: small;
+  width: 95%;
+  margin-left: 5px;
+  background-color: #0D47A1;
+  margin-top: 7px;
+}
+#btn-signupe{
+  font-size: 13px;
+  white-space: nowrap;
+  margin-left: 55px;
+  margin-top: 5px;
+}
+#btn-sign-in{
+background-color: #0D47A1;
+}
+#btn-style-googles{
+  border-radius: 2px; 
+  color: black;
+  border: 1px solid #ccc;
+  padding-bottom: 3px;
+  width: 192px;
+  white-space: nowrap;
+  font-size: small;
+  margin-left: 1px;
+}
+#btn-signup{
+ font-size: 13px;
+ white-space: nowrap;
+}
