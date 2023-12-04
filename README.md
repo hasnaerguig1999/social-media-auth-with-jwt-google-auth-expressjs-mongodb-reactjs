@@ -1,5 +1,6 @@
 # social-media-auth-with-jwt-google-auth-expressjs-mongodb-reactjs
-plateforme de médias sociaux complète avec un backend riche en fonctionnalités et un frontend réactif. permet aux utilisateurs de créer, récupérer, supprimer et apprécier des publications.
+plateforme de médias sociaux complète avec un backend riche en fonctionnalités et un frontend réactif. permet aux utilisateurs de créer, récupérer, supprimer et apprécier des publications
+
 
 # Comment faire ça
 Avant de commencer, assurez-vous que les logiciels suivants sont installés sur votre ordinateur :
@@ -40,4 +41,7 @@ npm i
 ```
 npm run dev
 ```
-
+# Lien jira pour la gestion de projet
+```
+https://hassan-nouhi.atlassian.net/jira/core/projects/GC/list
+```
